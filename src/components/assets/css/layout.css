@@ -1,0 +1,69 @@
+:root {
+    --primary-color: #163B72;
+
+    --font-size-big: 1.8rem;
+    --font-size-medium: 1.6rem;
+    --font-size-small: 1.3rem;
+
+    --box-shadow-config-1: 3px 3px 6px #888888;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.b-font {
+    font-size: var(--font-size-big);
+}
+.m-font {
+    font-size: var(--font-size-medium);
+}
+.s-font {
+    font-size: var(--font-size-small);
+}
+
+.header, .footer {
+    background-color: var(--primary-color);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 80px auto 50px;
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(180deg, rgba(202,255,213,1) 0%, rgba(22,59,114,1) 100%);
+}
+
+.header {
+
+    grid-column-start: 1;
+    grid-column-end:4;
+    grid-row: 1;
+    z-index: 2;
+    background-color: var(--primary-color);
+}
+
+.main-content {
+    
+    grid-column-start: 2;
+    grid-column-end:4;
+    grid-row: 2;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end:4;
+    grid-row: 3;
+}
