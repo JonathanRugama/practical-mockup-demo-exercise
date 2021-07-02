@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Practical Mockup Demo Exercise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Enunciado General : Tenemos el siguiente problema, necesitamos crear una aplicación que consulte, ingrese, actualiza o pueda dar de baja a los empleados de la compañía, necesitamos hacer una propuesta para el cliente de la arquitectura, herramientas y tecnologías a utilizar.
 
-## Available Scripts
+## Consideraciones Generales
 
-In the project directory, you can run:
+1. Para presentar la propuesta base al cliente se debe crear un “proof of concept” o Demo app para ejemplificar la navegación y uso básico , lo cual llamaremos Employee Mockup WebDemo.
+2. Este Demo no tendrá acceso a base de datos, sin embargo deberá tener un capa bien definida para su potencial implementación futura con algún api de persistencia.
+3. En este ejercicio al ser un Mockup usted debe crear su propia capa de persistencia temporal usando un API de Collections  según sea el lenguaje usado.
+4. El Demo tampoco tendrá uso de CSS o algún estilo, queda abierto a su elección si desea embellecer la página , sin embargo esto no será evaluado al final como parte del proceso.
 
-### `yarn start`
+## Especificación del DEMO
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Example for Query Employees
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+•	Column Name is the union of FirstName and LastName
+•	Add New Employee button will redirect to Create Employee Form
+•	Pencil Icon Button will redirect the user to Update Employee Form
+•	Garbage Icon will delete the current row
+•	Delete Button next to AddEmployeeButton will delete all the rows selected
+•	User will enter the name on FilterName and the Filter button must return the occurrences and Reset button will clean the Field
 
-### `yarn test`
+### Example to Create Employee
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+•	All Fields are required
+•	Email must be validated using a regex 
+•	Submit must redirect to the principal page
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Example to Update Employee
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+•	Same rules as Create Employee Section
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Final Deliverables
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+•	Architecture Scope Document explaining technical details ( Max 2 Page with 1 General Diagram)
+•	Sequence diagram for ONLY for : Query Employees , Create Employee , ( You could use Star UML is free and opensource  https://staruml.io/download )
+•	Mockup Demo Code Implemented 
