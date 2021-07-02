@@ -16,6 +16,7 @@
 
 a {
     text-decoration: none;
+    
 }
 
 html {
@@ -58,7 +59,7 @@ html {
 .main-content {
     
     grid-column-start: 2;
-    grid-column-end:4;
+    grid-column-end:3;
     grid-row: 2;
 }
 

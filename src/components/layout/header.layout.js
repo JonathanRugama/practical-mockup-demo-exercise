@@ -6,7 +6,12 @@ const HeaderLayout = () => {
     return (
         <header className="header">
             <nav className="navigation">
-                nav
+                <div className= "navigation-title">
+                    <a href="">Manage Employees</a>
+                </div>
+                <div className="navigation-filter">
+                    
+                </div>
             </nav>
         </header>
     )

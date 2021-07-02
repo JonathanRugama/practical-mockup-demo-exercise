@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content {
+
+    width: 60%;
+    height: 100%;
+}
+.footer-content p {
+    font-size: var(--font-size-medium);
+    color: white;
+    text-align: center;
+    margin: 1.2rem 0;
+}
+.footer-content p a {
+   color: white;
+}
