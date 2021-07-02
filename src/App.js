@@ -8,6 +8,7 @@ import MainContentLayout from './components/layout/main-content.layout';
 import FooterLayout from './components/layout/footer.layout';
 
 import IndexPage from './components/pages';
+import CreateEmployee from './components/pages/create-employee';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <MainContentLayout>
             <Switch>
               <Route exact path="/" component={IndexPage}></Route>
+              <Route exact path="/create-employee" component={CreateEmployee}></Route>
             </Switch>
           </MainContentLayout>
           <FooterLayout/>

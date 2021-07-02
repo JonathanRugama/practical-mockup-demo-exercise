@@ -39,3 +39,60 @@
 .table-list .table-row th {
     text-align: center;
 }
+.container-form {
+    display: flex;
+    margin-top: 2rem;
+    height: 90%;
+    justify-content: center;
+}
+
+.form-solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 2rem;
+    border: solid 3px var(--primary-color);
+    background-color: white;
+}
+.form-solution__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 0 1rem;
+    justify-self: center;
+}
+.form-solution__item:first-child{
+    margin-top: 0;
+}
+.form-solution__item span {
+    font-size: var(--font-size-medium);
+    font-family: Rockwell;
+    color: var(--primary-color);
+}
+.form-solution__item input {
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    
+}
+.form-solution button {
+    width: 30%;
+    align-self: center;
+    margin-top: 1rem;
+    background-color: var(--progress-bar-color);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    color: var(--primary-color);
+    
+}
+.form-solution button:hover {
+    border: solid 2px var(--primary-color);
+    font-weight: bold;
+}
