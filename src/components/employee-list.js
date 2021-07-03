@@ -1,5 +1,6 @@
 import React from 'react';
 import EmployeeListItem from './employee-list-item';
+
 class EmployeesList extends React.Component  {
 
     render() {
@@ -20,7 +21,9 @@ class EmployeesList extends React.Component  {
             
                 {this.props.employees.map(employee =>{
                     return (
+                    
                     <EmployeeListItem employee={employee}/> 
+                  
                     );
                     
                 })}       

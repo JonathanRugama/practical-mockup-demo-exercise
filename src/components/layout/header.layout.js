@@ -13,7 +13,7 @@ const HeaderLayout = () => {
                     
                 </div>
                 <div className="button-container">
-                    <Link className="button-create" to="/create-employee">+Create new Employee</Link>
+                    <Link className="button-create" to="/employee/new">+Create new Employee</Link>
                 </div>
             </nav>
         </header>
