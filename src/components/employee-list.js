@@ -11,8 +11,6 @@ class EmployeesList extends React.Component  {
             );
         }
         return (
-           
-            
             <tbody className="table-body">
                 <tr className="table-row">
                     <th>Name</th>

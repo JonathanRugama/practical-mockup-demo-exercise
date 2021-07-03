@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const faker = require('faker');
 
-function createEmployees(limit = 5) {
+function createEmployees(limit = 8) {
   const result = [];
 
   for (let i = 0; i < limit; i++) {

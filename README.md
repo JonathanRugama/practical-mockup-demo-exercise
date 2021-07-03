@@ -33,6 +33,4 @@ Enunciado General : Tenemos el siguiente problema, necesitamos crear una aplicac
 
 ### Final Deliverables
 
-•	Architecture Scope Document explaining technical details ( Max 2 Page with 1 General Diagram)
-•	Sequence diagram for ONLY for : Query Employees , Create Employee , ( You could use Star UML is free and opensource  https://staruml.io/download )
-•	Mockup Demo Code Implemented 
+•	Puedes descargar los entregables [Presionando aquí](https://1drv.ms/u/s!AnMewgxKFlbhg6FK9Urr1MbZn_WVKA?e=pq5uu8)

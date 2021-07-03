@@ -1,10 +1,11 @@
 import React from 'react';
 import CreateEmployeeForm from '../create-form-employee';
+import api from '../../api';
 
 class CreateEmployee extends React.Component {
 
     state = {
-        
+      
         form: {
             firstName:'',
             lastName:'',
@@ -23,16 +24,31 @@ class CreateEmployee extends React.Component {
                /* Y añadimos el adicional o sobreescribimos */
                [e.target.name]: e.target.value,
            }
-            
+        
         })
+
+
+
     }
 
 
-    handleSubmit = (e) => {
+    handleSubmit = async (e) => {
+        
         e.preventDefault();
-        console.log('Form was submitted');
-    }
+        this.setState({loading:true, error:null})
 
+         let employee = {
+            name: `${this.state.form.firstName} ${this.state.form.lastName}`,
+            email: this.state.form.email 
+        }                    
+        try {
+            await api.employees.create(employee);
+            this.setState({loading:false})
+            this.props.history.push('/')
+        }catch (error) {
+            this.setState({loading:false, error:error})
+        }
+    }
     
     render() {
         return(
